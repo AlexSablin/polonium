@@ -1,0 +1,250 @@
+doctype html
+html(lang='ru', class="no-js")
+
+	head
+		meta(charset='utf-8')
+
+		title Заголовок
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		
+		link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+		
+		
+		// Load CSS
+		link(rel='stylesheet', href='css/main.min.css')
+		link(rel='stylesheet', href='css/fonts.min.css')
+		link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-grid.min.css')
+
+	body
+		header.main-header
+			.main-header__bg
+				.overlay
+			.container
+				.top-header
+					a(href="#").top-header__logo
+					.top-header__menu
+						a(href="#menu").tcon.tcon-menu--xcross
+							span.tcon-text Menu
+							span.tcon-menu__lines(aria-hidden="true")
+				.heading
+					h1.heading__h1 We design 
+						span.accent things
+					p.heading__p Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					a(href="#hire-us").heading__btn.popup-with-move-anim Hire us
+					a(href="#our-works").heading__btn Our works					
+				a(href="#our-services").btn-down
+				
+			a(href="#x").overlay_menu#menu
+			.popup
+				ul.popup__menu
+					li
+						a(href="#").popup__menu__item Home
+					li
+						a(href="#reviews").popup__menu__item About Us
+					li
+						a(href="#our-services").popup__menu__item Services
+					li
+						a(href="#our-works").popup__menu__item Our Works
+					li
+						a(href="#contact-v2").popup__menu__item Contact
+					li 
+						.popup__menu__hr
+					li 
+						.soc_menu
+							a(href="#").soc__fb
+							a(href="#").soc__tw
+							a(href="#").soc__gp
+							a(href="#").soc__ch
+							a(href="#").soc__be
+				a(href="#close").close
+			
+		section.our-services#our-services
+			.container
+				.service1
+					h3.service__name Print design
+					p.service__desc Excepteur sint occaecat<br> cupidatat non proident,<br> sunt in culpa qui officia
+				.service2
+					h3.service__name Web design
+					p.service__desc Incididunt ut labore et <br>dolore magna aliqua. Ut <br>enim ad minim veniam
+				.service3
+					h3.service__name App design
+					p.service__desc Quis nostrud exercitation <br>ullamco laboris nisi ut <br>aliquip ex ea commodo  
+				.service4
+					h3.service__name Logo design
+					p.service__desc Duis aute irure dolor in <br>reprehenderit in voluptate <br>velit esse cillum dolore eu
+					
+		section.newsletter
+			.newsletter__bg
+				.overlay
+			.container
+				form(action="").newsletter-form
+					input.newsletter-form__input(type="email", name="", placeholder="Enter Your email adress for newsletter")
+					button.newsletter-form__btn(type="submit") Subscribe
+		section.our-works#our-works
+			.our-works__header
+				h2.our-works__header__h2 Our 
+					span.accent Works
+				p.our-works__header__p Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat
+			.our-works__content
+				.block-works1
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+				.block-works2
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+				.block-works3
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+				.block-works4
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+				.block-works5
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+				.block-works6
+					.block-works__overlay
+						h2.block-works__h2 Abazoo Website
+						p.block-works__p Quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo 
+						a(href="#").block-works__btn Show Project
+			a(href="#").show-more__btn Show More
+		section.reviews#reviews
+			.reviews__bg
+				.overlay
+			.container
+				.reviews__slider
+					.review
+						img(src="img/review_avatar1.jpg", alt="Avatar").review__avatar
+						h2.review__text These guys are incredible! I get my project in 10 days and it was awesome! <br>Very good service! Highly recommended!
+						p.review__author John Smith
+					.review
+						img(src="img/review_avatar1.jpg", alt="Avatar").review__avatar
+						h2.review__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat architecto quae, <br>aperiam veniam corrupti non amet cum omnis facilis autem.
+						p.review__author John Smit
+					.review
+						img(src="img/review_avatar1.jpg", alt="Avatar").review__avatar
+						h2.review__text  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. <br>Жаренные страна не переписали сих, наш вершину все точках строчка!
+						p.review__author John Smith
+		section.our-team#our-team
+			.our-works__header
+				h2.our-works__header__h2 Our 
+					span.accent Team
+				p.our-works__header__p Sed ut perspiciatis unde omnis iste natus error sit <br>voluptatem accusantium doloremque laudantium totam rem
+			.our-team__content
+				.container
+					.person.grayscale#p1
+						img(src="img/person1.jpg", alt="Catherina Gail").person__photo
+						h2.person__name Catherina Gail
+						.soc-btns
+							a(href="#").soc-btns__fb
+							a(href="#").soc-btns__tw
+							a(href="#").soc-btns__gp
+						p.person__about Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					.person.grayscale#p2
+						img(src="img/person2.jpg", alt="Harvey Rube").person__photo
+						h2.person__name Harvey Rube
+						.soc-btns
+							a(href="#").soc-btns__fb
+							a(href="#").soc-btns__tw
+							a(href="#").soc-btns__gp
+						p.person__about Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+					.person.grayscale#p3
+						img(src="img/person3.jpg", alt="Janet Pris").person__photo
+						h2.person__name Janet Pris
+						.soc-btns
+							a(href="#").soc-btns__fb
+							a(href="#").soc-btns__tw
+							a(href="#").soc-btns__gp
+						p.person__about Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+					.person.grayscale#p4
+						img(src="img/person4.jpg", alt="Kevin Ward").person__photo
+						h2.person__name Kevin Ward
+						.soc-btns
+							a(href="#").soc-btns__fb
+							a(href="#").soc-btns__tw
+							a(href="#").soc-btns__gp
+						p.person__about Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+		section.contact-v2#contact-v2
+			.contact-v2__bg
+				.overlay
+			.container
+				.row
+					.contact-v2__header
+						h2.contact-v2__header__h2 Say 
+							span.accent Hello
+						p.contact-v2__header__p Sed ut perspiciatis unde omnis iste natus error sit <br>voluptatem accusantium doloremque laudantium totam rem
+				.row
+					.left_side
+						.additional-info
+							.additional-info__pic
+							h2.additional-info__head Additional info
+							p.additional-info__text Borough High St 20024 London SE1 1BL <br>London, United Kindom
+							.additional-info__email-phone
+								.email 
+									.email-img
+									p.email-text contact@designstudio.com
+								.phone
+									.phone-img
+									p.phone-text 00 123 456 789
+						.buisness-hour
+							.buisness-hour__pic
+							h2.buisness-hour__head BUSINESS HOURS
+							p.buisness-hour__text Mon - Fri: 8am to 6pm <br>Sat: 10am to 4pm
+						.soc
+							a(href="#").soc__fb
+							a(href="#").soc__tw
+							a(href="#").soc__gp
+							a(href="#").soc__ch
+							a(href="#").soc__be
+					.right_side
+						form(action="").contact2-form
+							input.contact2-form__input(type="text", name="", placeholder="Your Name")
+							input.contact2-form__input(type="email", name="", placeholder="Your Email")
+							input.contact2-form__input(type="text", name="", placeholder="Subject")
+							textarea.contact2-form__input-msg(type="text", name="", placeholder="Your Message",row=20)
+							button.contact2-form__btn(type="submit") Send
+		footer.footer
+			.container
+				.footer__copyright © 2015 COPYRIGHT DESIGN STUDIO
+				.footer__design__pic
+				.footer__design DESIGNED BY
+		.hidden
+			.zoom-anim-dialog.mfp-hide#hire-us
+				form.form-hire-us
+					h2.our-works__header__h2 Hire 
+						span.accent Us
+					p.our-works__header__p Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum<br><br>
+					input.contact-form__input(type="email", name="", placeholder="Your Email")
+					input.contact-form__input(type="text", name="", placeholder="Subject")
+					textarea.contact-form__input-msg(type="text", name="", placeholder="Your Message",row=20)
+					button.contact-form__btn(type="submit") Send message
+			
+				
+		// Поддержка старых браузеров
+		<!--[if lt IE 9]>
+		<script src="libs/html5shiv/es5-shim.min.js"></script>
+		<script src="libs/html5shiv/html5shiv.min.js"></script>
+		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="libs/respond/respond.min.js"></script>
+		<![endif]-->
+		
+		// Load Scripts
+		script(src="libs/html5shiv/es5-shim.min.js")
+		script(src="js/libs.js")
+		script(src="js/common.js")
