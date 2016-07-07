@@ -16,7 +16,7 @@ gulp.task('browser-sync', ['styles', 'scripts', 'jade'], function() {
 				},
 				notify: false
 		});
-		
+
 });
 
 gulp.task('styles', function () {
@@ -51,6 +51,7 @@ gulp.task('scripts', function() {
 		'./app/libs/slick-carousel/slick/slick.min.js',
 		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'./app/libs/bgparallax/jquery.parallax.js',
+		'./app/libs/bootstrap/dist/js/bootstrap.min.js',
 		])
 		.pipe(concat('libs.js'))
 		//.pipe(uglify()) //Minify libs.js
@@ -69,22 +70,22 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', ['clean','jade', 'styles', 'scripts'], function(){
-    
+
    var buildCss = gulp.src('app/css/**/*')
    .pipe(gulp.dest('dist/css'));
-    
+
    var buildFonts = gulp.src('app/fonts/**/*')
    .pipe(gulp.dest('dist/fonts'));
-	
+
 	var buildImgs = gulp.src('app/img/**/*')
    .pipe(gulp.dest('dist/img'));
-    
+
    var buildJs = gulp.src('app/Js/**/*')
    .pipe(gulp.dest('dist/Js'));
-	
+
 	var buildLibs = gulp.src('app/libs/**/*')
    .pipe(gulp.dest('dist/libs'));
-    
+
    var buildHtml = gulp.src('app/*.html')
    .pipe(gulp.dest('dist'));
 });

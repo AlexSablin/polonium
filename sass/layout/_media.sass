@@ -3,42 +3,198 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.contact-left-side
+		width: 400px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.heading
+		&__title
+			font-size: 60px !important
+		&__text
+			font-size: 22px !important
 
+	.our-services__service1
+		margin-top: 60px !important
+	.our-services__service2
+		margin-top: 60px !important
+	.our-services__service3
+		margin-top: 0 !important
+	.our-services__service4
+		margin-top: 0 !important
+
+	.newsletter-form
+		&__input
+			margin-right: 30px !important
+			width: 460px !important
+		&__btn
+			width: 210px !important
+			float: none !important
+
+	.reviews-slider
+		width: 100% !important
+
+	.review
+		&__text
+			font-size: 20px !important
+		&__author
+			font-size: 16px !important
+
+	.contact-left-side
+		margin-left: 25%
+	.contact-right-side
+		margin-left: 15%
+	.buisness-hour
+		margin-top: 0 !important
+		height: 100px !important
+	.section-header--black
+		margin-bottom: 20px !important
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
+	/**/
+	.heading
+		&__title
+			font-size: 45px !important
+		&__text
+			font-size: 18px !important
 
+	.heading__btn
+		width: 180px !important
+
+	.newsletter-form
+		width: 600px !important
+		&__input
+			margin-right: 25px !important
+			width: 350px !important
+		&__btn
+			width: 150px !important
+			float: none !important
+
+	.review
+		&__text
+			font-size: 18px !important
+		&__author
+			font-size: 14px !important
+
+	.contact-left-side
+		margin-left: 25% !important
+	.contact-right-side
+		margin-left: 15%
+		width: 400px !important
+	.contact2-form
+		&__input
+			width: 400px !important
+			&-msg
+				width: 400px !important
+		&__btn
+			width: 400px !important
+
+	#hire-us
+		width: 550px
+		padding: 50px 20px
+
+	.form-hire-us .section-header
+		&__title
+			font-size: 2em !important
+		&__text
+			font-size: 0.9em !important
+
+@media only screen and (max-width : 580px)
+
+	.newsletter-form
+		width: 500px !important
+		&__input
+			margin-right: 25px !important
+			width: 300px !important
+		&__btn
+			width: 120px !important
+			float: none !important
+
+	.review
+		&__text
+			font-size: 16px !important
+		&__author
+			font-size: 12px !important
+
+	.contact-left-side
+		margin-left: 10% !important
+
+	.contact-right-side
+		margin-left: 10%
+		width: 400px !important
+
+	#hire-us
+		width: 460px
+		padding: 50px 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.tcon-text
+		display: none
 
+	.heading
+		&__title
+			font-size: 32px !important
+		&__text
+			font-size: 14px !important
+
+	.heading__btn
+		width: 120px !important
+		font-size: 0.9em
+
+	@for $i from 1 through 4
+		.our-services__service#{$i}
+			margin-left: 100px !important
+	.our-services__service1
+		margin-top: 60px !important
+		margin-bottom: 40px !important
+	.our-services__service2
+		margin-top: 0 !important
+		margin-bottom: 40px !important
+	.our-services__service3
+		margin-top: 0 !important
+		margin-bottom: 40px !important
+	.our-services__service4
+		margin-top: 0 !important
+
+	.newsletter-form
+		width: 320px !important
+		margin-top: 75px !important
+		&__input
+			margin-right: 25px !important
+			margin-left: auto !important
+			margin-right: auto !important
+			width: 300px !important
+			display: block !important
+		&__btn
+			width: 120px !important
+			float: none !important
+			display: block !important
+			margin-top: 20px !important
+			margin-left: auto !important
+			margin-right: auto !important
+
+	.section-header
+		&__title
+			font-size: 2em !important
+		&__text
+			font-size: 0.9em !important
+
+	.contact2-form
+		&__input
+			width: 300px !important
+			&-msg
+				width: 300px !important
+		&__btn
+			width: 300px !important
+			padding-left: 150px !important
+
+	#hire-us
+		width: 320px
+		padding: 20px 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -70,4 +226,3 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-

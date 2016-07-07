@@ -2784,7 +2784,7 @@ h1, h2, h3, h4, h5, button {
   text-transform: uppercase; }
 
 .container {
-  min-width: 1170px; }
+  min-width: 320px; }
 
 .main-header {
   width: 100%;
@@ -2828,18 +2828,18 @@ h1, h2, h3, h4, h5, button {
     width: 100%;
     height: 100%;
     position: absolute; }
-  .reviews__slider {
+  .reviews-slider {
     position: relative;
     height: 500px; }
 
 .our-team {
   height: 800px; }
 
-.left_side {
+.contact-left-side {
   width: 585px;
   float: left; }
 
-.right_side {
+.contact-right-side {
   width: 585px;
   float: right;
   position: relative; }
@@ -2937,15 +2937,15 @@ h1, h2, h3, h4, h5, button {
 
 .heading {
   position: relative;
-  margin: 230px auto;
+  margin: 175px auto;
   width: 820px;
-  height: 300px;
+  height: 100%;
   text-align: center; }
-  .heading__h1 {
+  .heading__title {
     color: #fff;
     font: 70px "OpenSansExtraBold";
     margin-bottom: 5px; }
-  .heading__p {
+  .heading__text {
     color: #fff;
     font: 25px "OpenSansRegular";
     text-align: center;
@@ -2984,66 +2984,66 @@ h1, h2, h3, h4, h5, button {
   margin: 0 auto;
   margin-top: -50px; }
 
-.service1 {
+.our-services__service1 {
   background: url(../img/service1@2x.png) center 0 no-repeat;
   background-size: 151px 151px;
   display: inline-block;
   margin: 100px 50px 0 50px;
   text-align: center;
   width: 180px; }
-  .service1 .service__name {
+  .our-services__service1 .service__name {
     padding-top: 180px;
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif; }
-  .service1 .service__desc {
+  .our-services__service1 .service__desc {
     margin-top: 27px;
     font-size: 14px;
     font-family: "OpenSansRegular", sans-serif; }
 
-.service2 {
+.our-services__service2 {
   background: url(../img/service2@2x.png) center 0 no-repeat;
   background-size: 151px 151px;
   display: inline-block;
   margin: 100px 50px 0 50px;
   text-align: center;
   width: 180px; }
-  .service2 .service__name {
+  .our-services__service2 .service__name {
     padding-top: 180px;
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif; }
-  .service2 .service__desc {
+  .our-services__service2 .service__desc {
     margin-top: 27px;
     font-size: 14px;
     font-family: "OpenSansRegular", sans-serif; }
 
-.service3 {
+.our-services__service3 {
   background: url(../img/service3@2x.png) center 0 no-repeat;
   background-size: 151px 151px;
   display: inline-block;
   margin: 100px 50px 0 50px;
   text-align: center;
   width: 180px; }
-  .service3 .service__name {
+  .our-services__service3 .service__name {
     padding-top: 180px;
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif; }
-  .service3 .service__desc {
+  .our-services__service3 .service__desc {
     margin-top: 27px;
     font-size: 14px;
     font-family: "OpenSansRegular", sans-serif; }
 
-.service4 {
+.our-services__service4 {
   background: url(../img/service4@2x.png) center 0 no-repeat;
   background-size: 151px 151px;
   display: inline-block;
   margin: 100px 50px 0 50px;
   text-align: center;
   width: 180px; }
-  .service4 .service__name {
+  .our-services__service4 .service__name {
     padding-top: 180px;
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif; }
-  .service4 .service__desc {
+  .our-services__service4 .service__desc {
     margin-top: 27px;
     font-size: 14px;
     font-family: "OpenSansRegular", sans-serif; }
@@ -3083,6 +3083,24 @@ h1, h2, h3, h4, h5, button {
       background-color: #fff;
       color: #f7600e;
       border: 1px solid #f7600e; }
+
+.section-header {
+  display: block;
+  margin: 100px 0 85px;
+  text-align: center; }
+  .section-header__title {
+    line-height: 1em;
+    font-size: 35px;
+    font-family: "OpenSansSemiBold", sans-serif;
+    margin-bottom: 20px; }
+  .section-header__text {
+    line-height: 2em;
+    font-size: 16px;
+    font-family: "OpenSansRegular", sans-serif; }
+  .section-header--black {
+    color: #fff;
+    position: relative;
+    margin: 90px 0 85px; }
 
 .our-works__header {
   display: block;
@@ -3186,14 +3204,14 @@ h1, h2, h3, h4, h5, button {
   -webkit-border-radius: 9px;
   border-radius: 9px; }
 
-.block-works__h2 {
+.block-works__title {
   color: #fff;
   font-size: 25px;
   font-family: "OpenSansSemiBold", sans-serif;
   text-align: center;
   margin: 85px 0 15px; }
 
-.block-works__p {
+.block-works__text {
   color: #fff;
   font-family: "OpenSansRegular", sans-serif;
   line-height: 1.8em;
@@ -3315,22 +3333,6 @@ h1, h2, h3, h4, h5, button {
     background: url(../img/soc_btns@2x.png) -48px 0 no-repeat;
     background-size: 72px 24px; }
 
-.contact-v2__header {
-  display: block;
-  margin: 90px 0 85px;
-  text-align: center;
-  position: relative;
-  color: #fff; }
-  .contact-v2__header__h2 {
-    line-height: 1em;
-    font-size: 35px;
-    font-family: "OpenSansSemiBold", sans-serif;
-    margin-bottom: 20px; }
-  .contact-v2__header__p {
-    line-height: 2em;
-    font-size: 16px;
-    font-family: "OpenSansRegular", sans-serif; }
-
 .additional-info {
   margin-left: 110px;
   display: block;
@@ -3345,7 +3347,7 @@ h1, h2, h3, h4, h5, button {
     position: absolute;
     top: 0;
     left: -100px; }
-  .additional-info__head {
+  .additional-info__title {
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif;
     margin-bottom: 20px; }
@@ -3356,7 +3358,7 @@ h1, h2, h3, h4, h5, button {
   .additional-info__email-phone {
     margin-left: 30px;
     position: relative; }
-    .additional-info__email-phone .email-img {
+    .additional-info__email-phone .email__img {
       background: url(../img/email@2x.png) 0 0 no-repeat;
       background-size: 17px 14px;
       width: 17px;
@@ -3364,7 +3366,7 @@ h1, h2, h3, h4, h5, button {
       position: absolute;
       top: 6px;
       left: -30px; }
-    .additional-info__email-phone .phone-img {
+    .additional-info__email-phone .phone__img {
       background: url(../img/phone@2x.png) 0 0 no-repeat;
       background-size: 17px 14px;
       width: 17px;
@@ -3388,7 +3390,7 @@ h1, h2, h3, h4, h5, button {
     position: absolute;
     top: 0;
     left: -100px; }
-  .buisness-hour__head {
+  .buisness-hour__title {
     font-size: 16px;
     font-family: "OpenSansSemiBold", sans-serif;
     margin-bottom: 20px; }
@@ -3397,41 +3399,41 @@ h1, h2, h3, h4, h5, button {
     font-family: "OpenSansRegular", sans-serif;
     margin-bottom: 15px; }
 
-.soc, .soc_menu {
+.soc-list, .popup__menu .soc-list {
   display: block;
   margin: 0;
   width: 350px;
   height: 24px;
   position: relative; }
-  .soc__fb {
+  .soc-list__fb {
     width: 43px;
     height: 43px;
     margin: 0 10px;
     display: inline-block;
     background: url(../img/soc_btns2@2x.png) 0 0 no-repeat;
     background-size: 215px 43px; }
-  .soc__tw {
+  .soc-list__tw {
     width: 43px;
     height: 43px;
     margin: 0 10px;
     display: inline-block;
     background: url(../img/soc_btns2@2x.png) -43px 0 no-repeat;
     background-size: 215px 43px; }
-  .soc__gp {
+  .soc-list__gp {
     width: 43px;
     height: 43px;
     margin: 0 10px;
     display: inline-block;
     background: url(../img/soc_btns2@2x.png) -86px 0 no-repeat;
     background-size: 215px 43px; }
-  .soc__ch {
+  .soc-list__ch {
     width: 43px;
     height: 43px;
     margin: 0 10px;
     display: inline-block;
     background: url(../img/soc_btns2@2x.png) -129px 0 no-repeat;
     background-size: 215px 43px; }
-  .soc__be {
+  .soc-list__be {
     width: 43px;
     height: 43px;
     margin: 0 10px;
@@ -3439,7 +3441,7 @@ h1, h2, h3, h4, h5, button {
     background: url(../img/soc_btns2@2x.png) -172px 0 no-repeat;
     background-size: 215px 43px; }
 
-.soc_menu {
+.popup__menu .soc-list {
   margin: 0 auto; }
 
 .contact2-form__input {
@@ -3495,7 +3497,7 @@ h1, h2, h3, h4, h5, button {
   float: right;
   display: inline-block;
   line-height: 100px; }
-  .footer__design__pic {
+  .footer__design-pic {
     background: url(../img/design@2x.png) 0 0 no-repeat;
     background-size: 77px 14px;
     width: 77px;
@@ -3549,18 +3551,20 @@ h1, h2, h3, h4, h5, button {
 
 .popup__menu {
   text-align: center; }
-  .popup__menu__item {
-    font-size: 35px;
-    color: #fff;
-    font-family: "OpenSansSemiBold", sans-serif;
-    line-height: 70px;
-    text-transform: uppercase; }
-    .popup__menu__item:hover {
-      color: #f7600e; }
-  .popup__menu__hr {
-    border-bottom: 2px solid #f7600e;
-    width: 170px;
-    margin: 40px auto; }
+
+.popup__item {
+  font-size: 35px;
+  color: #fff;
+  font-family: "OpenSansSemiBold", sans-serif;
+  line-height: 70px;
+  text-transform: uppercase; }
+  .popup__item:hover {
+    color: #f7600e; }
+
+.popup__hr {
+  border-bottom: 2px solid #f7600e;
+  width: 170px;
+  margin: 40px auto; }
 
 .overlay {
   width: 100%;

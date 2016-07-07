@@ -4,29 +4,26 @@
 		background-size: 158px 18px
 		width: 158px
 		height: 18px
-		position: absolute
-		top: 49px
-		left: 30px
-	&__menu		
-		position: absolute
+		display: inline-block
+	&__menu
+		display: inline-block
+		float: right
 		color: #fff
 		font-family: "OpenSansRegular", sans-serif
-		right: 0
-		top: 49px
 		.tcon-text
 			margin-right: 19px
 
 .heading
 	position: relative
-	margin: 230px auto
-	width: 820px
-	height: 300px
+	margin: 120px auto
+	width: 100%
+	height: 100%
 	text-align: center
-	&__h1
+	&__title
 		color: #fff
 		font: 70px "OpenSansExtraBold"
 		margin-bottom: 5px
-	&__p
+	&__text
 		color: #fff
 		font: 25px "OpenSansRegular"
 		text-align: center
@@ -43,7 +40,7 @@
 	font-family: "OpenSansSemiBold", sans-serif
 	background-color: transparent
 	color: #fff
-	border-radius: 8px	
+	border-radius: 8px
 	border: 1px solid rgba(255,255,255, .15)
 	transition: all .2s ease
 	&:hover, &:active, &:focus
@@ -63,35 +60,37 @@
 	margin: 0 auto
 	margin-top: -50px
 
-@for $i from 1 through 4 
-	.service#{$i}
+@for $i from 1 through 4
+	.our-services__service#{$i}
 		background: url(../img/service#{$i}@2x.png) center 0 no-repeat
 		background-size: 151px 151px
-		display: inline-block
-		margin: 100px 50px 0 50px
+		display: block
+		margin: 100px 0
 		text-align: center
-		width: 180px
+		min-width: 200px !important
 		.service__name
 			padding-top: 180px
 			font-size: 16px
+			width: 100%
 			font-family: "OpenSansSemiBold", sans-serif
 		.service__desc
 			margin-top: 27px
 			font-size: 14px
+			width: 100%
 			font-family: "OpenSansRegular", sans-serif
-	
+
 .newsletter-form
 	position: relative
 	margin: 100px auto 0
 	display: block
 	height: 50px
-	width: 860px	
+	width: 860px
 	&__input
 		height: 50px
 		width: 560px
 		border-radius: 8px
 		border: none
-		padding: 25px
+		padding-left: 25px
 		outline: none
 		&:hover, &:focus
 			box-shadow: 0 0 1px 2px rgba($accent-color, .5)
@@ -111,6 +110,23 @@
 			background-color: #fff
 			color: $accent-color
 			border: 1px solid $accent-color
+.section-header
+	display: block
+	margin: 100px 0 85px
+	text-align: center
+	&__title
+		line-height: 1em
+		font-size: 35px
+		font-family: "OpenSansSemiBold", sans-serif
+		margin-bottom: 20px
+	&__text
+		line-height: 2em
+		font-size: 16px
+		font-family: "OpenSansRegular", sans-serif
+	&--black
+		color: #fff
+		position: relative
+		margin: 90px 0 85px
 
 .our-works
 	&__header
@@ -126,17 +142,21 @@
 			line-height: 2em
 			font-size: 16px
 			font-family: "OpenSansRegular", sans-serif
-	
-@for $i from 1 through $numberOfWorks 
+
+.flex_blocks
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+
+@for $i from 1 through $numberOfWorks
 	.block-works#{$i}
 		width: 360px
 		height: 360px
-		display: inline-block
 		margin: 13px
 		background: url(../img/block-work#{$i}@2x.png) 0 0  no-repeat
 		background-size: 360px 360px
 		position: relative
-		&:hover			
+		&:hover
 			.block-works__overlay
 				opacity: 1
 				transition: all .4s ease
@@ -151,13 +171,13 @@
 	border-radius: 9px
 
 .block-works
-	&__h2
+	&__title
 		color: #fff
 		font-size: 25px
 		font-family: "OpenSansSemiBold", sans-serif
 		text-align: center
 		margin: 85px 0 15px
-	&__p
+	&__text
 		color: #fff
 		font-family: "OpenSansRegular", sans-serif
 		line-height: 1.8em
@@ -172,7 +192,7 @@
 		font-family: "OpenSansSemiBold", sans-serif
 		background-color: #fff
 		color: $accent-color
-		border-radius: 8px		
+		border-radius: 8px
 		border: none
 		&:hover, &:active, &:visited, &:focus
 			color: $accent-color
@@ -188,7 +208,7 @@
 	font-family: "OpenSansSemiBold", sans-serif
 	background-color: #fff
 	color: $main-color
-	border-radius: 8px	
+	border-radius: 8px
 	border: 1px solid rgba($main-color, .2)
 	transition: all .2s ease
 	&:hover, &:active, &:focus
@@ -222,11 +242,11 @@
 	width: 100%
 	height: 100%
 	-webkit-filter: grayscale(1)
+	-moz-filter: grayscale(1)
 
 .person
 	width: 240px
-	height: 100%
-	display: inline-block
+	height: 550px
 	margin: 0 20px
 	text-align: center
 	&__name
@@ -234,9 +254,9 @@
 		font-family: "OpenSansSemiBold", sans-serif
 		margin-top: 25px
 	&__photo
-		border-radius: 8px		
+		border-radius: 8px
 		width: 100%
-		height: 269px		
+		height: 269px
 		transition: all .4s ease
 	&__about
 		font-size: 14px
@@ -272,23 +292,6 @@
 		background: url(../img/soc_btns@2x.png) -48px 0  no-repeat
 		background-size: 72px 24px
 
-.contact-v2
-	&__header
-		display: block
-		margin: 90px 0 85px
-		text-align: center
-		position: relative
-		color: #fff
-		&__h2
-			line-height: 1em
-			font-size: 35px
-			font-family: "OpenSansSemiBold", sans-serif
-			margin-bottom: 20px
-		&__p
-			line-height: 2em
-			font-size: 16px
-			font-family: "OpenSansRegular", sans-serif
-	
 .additional-info
 	margin-left: 110px
 	display: block
@@ -303,7 +306,7 @@
 		position: absolute
 		top: 0
 		left: -100px
-	&__head
+	&__title
 		font-size: 16px
 		font-family: "OpenSansSemiBold", sans-serif
 		margin-bottom: 20px
@@ -315,7 +318,7 @@
 		margin-left: 30px
 		position: relative
 		.email
-			&-img
+			&__img
 				background: url(../img/email@2x.png) 0 0 no-repeat
 				background-size: 17px 14px
 				width: 17px
@@ -324,7 +327,7 @@
 				top: 6px
 				left: -30px
 		.phone
-			&-img
+			&__img
 				background: url(../img/phone@2x.png) 0 0 no-repeat
 				background-size: 17px 14px
 				width: 17px
@@ -348,7 +351,7 @@
 		position: absolute
 		top: 0
 		left: -100px
-	&__head
+	&__title
 		font-size: 16px
 		font-family: "OpenSansSemiBold", sans-serif
 		margin-bottom: 20px
@@ -356,8 +359,8 @@
 		font-size: 14px
 		font-family: "OpenSansRegular", sans-serif
 		margin-bottom: 15px
-	
-.soc
+
+.soc-list
 	display: block
 	margin: 0
 	width: 350px
@@ -399,18 +402,18 @@
 		background: url(../img/soc_btns2@2x.png) -172px 0  no-repeat
 		background-size: 215px 43px
 
-.soc_menu
-	@extend .soc
+.popup__menu .soc-list
+	@extend .soc-list
 	margin: 0 auto
 
-.contact2-form	
+.contact2-form
 	&__input
 		height: 50px
 		width: 555px
 		margin-bottom: 20px
 		border-radius: 8px
 		border: none
-		padding: 25px
+		padding-left: 25px
 		outline: none
 		&-msg
 			height: 220px
@@ -449,8 +452,8 @@
 	&__design
 		float: right
 		display: inline-block
-		line-height: 100px	
-		&__pic
+		line-height: 100px
+		&-pic
 			background: url(../img/design@2x.png) 0 0 no-repeat
 			background-size: 77px 14px
 			width: 77px
@@ -464,17 +467,17 @@
 .contact-form
 	&__input
 		height: 50px
-		width: 555px
+		width: 100%
 		margin-bottom: 20px
 		border-radius: 8px
 		border: 1px solid rgba($main-color, .3)
-		padding: 25px
+		padding-left: 25px
 		outline: none
 		&:hover, &:focus
 			border: 1px solid rgba($accent-color, .7)
 		&-msg
 			height: 220px
-			width: 555px
+			width: 100%
 			margin-bottom: 20px
 			border-radius: 8px
 			border: 1px solid rgba($main-color, .3)
@@ -484,7 +487,7 @@
 				border: 1px solid rgba($accent-color, .7)
 	&__btn
 		height: 50px
-		width: 550px
+		width: 100%
 		border-radius: 8px
 		outline: none
 		border: none
@@ -501,15 +504,15 @@
 .popup
 	&__menu
 		text-align: center
-		&__item			
-			font-size: 35px
-			color: #fff
-			font-family: "OpenSansSemiBold", sans-serif
-			line-height: 70px
-			text-transform: uppercase
-			&:hover
-				color: $accent-color
-		&__hr
-			border-bottom: 2px solid $accent-color
-			width: 170px
-			margin: 40px auto
+	&__item
+		font-size: 35px
+		color: #fff
+		font-family: "OpenSansSemiBold", sans-serif
+		line-height: 70px
+		text-transform: uppercase
+		&:hover
+			color: $accent-color
+	&__hr
+		border-bottom: 2px solid $accent-color
+		width: 170px
+		margin: 40px auto
